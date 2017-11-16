@@ -1,0 +1,22 @@
+Cpp = g++ -g
+flags = `/usr/local/llvm/llvm-3.6.2-build/Release+Asserts/bin/llvm-config --cxxflags`
+LDflags = `/usr/local/llvm/llvm-3.6.2-build/Release+Asserts/bin/llvm-config --ldflags --libs`
+MATLABWORK = /usr/local/matlab/
+
+DLLVMSim5.exe:DLLVMSim5.o DIRSim5.o DIRSimRegs.o DIRSimMems.o DRun.o
+	$(Cpp) LLVMSim5.o IRSimRegs.o IRSimMems.o IRSim5.o Run.o $(LDflags) -o DLLVMSim5.exe
+	rm DLLVMSim5.o DIRSim5.o DIRSimRegs.o DIRSimMems.o DRun.o
+DLLVMSim5.o:LLVMSim5.cpp IRSim5.hpp
+	$(Cpp) -c $(flags) LLVMSim5.cpp -o DLLVMSim5.o
+
+DRun.o:Run.cpp IRSim5.hpp
+	$(Cpp) -c $(flags) Run.cpp -o DRun.o
+
+DIRSim5.o:IRSim5.cpp IRSim5.hpp IRSimRegs.hpp IRSimMems.hpp
+	$(Cpp) -c $(flags) IRSim5.cpp -o DIRSim5.o
+
+DIRSimRegs.o:IRSimRegs.hpp IRSimRegs.cpp IRSimKinds.hpp
+	$(Cpp) -c $(flags) IRSimRegs.cpp -o DIRSimRegs.o
+
+DIRSimMems.o:IRSimMems.hpp IRSimMems.cpp IRSimKinds.hpp
+	$(Cpp) -c $(flags) IRSimMems.cpp -o DIRSimMems.o

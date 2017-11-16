@@ -1,0 +1,18 @@
+clang = /usr/local/llvm/llvm-3.6.2-build/Release+Asserts/bin/clang -emit-llvm
+llvm-dis = /usr/local/llvm/llvm-3.6.2-build/Release+Asserts/bin/llvm-dis
+llvm-link = /usr/local/llvm/llvm-3.6.2-build/Release+Asserts/bin/llvm-link
+matlab_dir = /usr/local/matlab/Fibonacci_ert_rtw/
+
+Fibonacci.ll:ert_main.o Fibonacci.o 
+	$(llvm-link) -o Fibonacci.bc ert_main.o Fibonacci.o
+	$(llvm-dis) -o Fibonacci.ll Fibonacci.bc
+	rm *.o
+
+ert_main.o:$(matlab_dir)ert_main.c $(matlab_dir)rtwtypes.h $(matlab_dir)Fibonacci.h
+	$(clang) -o ert_main.o -c -I $(matlab_dir) $(matlab_dir)ert_main.c
+
+Fibonacci.o:$(matlab_dir)Fibonacci.c $(matlab_dir)Fibonacci.h $(matlab_dir) $(matlab_dir)Fibonacci_private.h
+	$(clang) -o Fibonacci.o -c -I $(matlab_dir)$(matlab_dir)Fibonacci.c
+
+Fibonacci_data.o:$(matlab_dir)Fibonacci_data.c $(matlab_dir)Fibonacci.h $(matlab_dir)Fibonacci_private.h
+	$(clang) -o Fibonacci_data.o 

@@ -1,0 +1,33 @@
+Cpp = g++
+MATLABWORK = /usr/local/matlab/
+TEST_MODEL_DIR = $(MATLABWORK)/test_model_ert_rtw/
+
+#ADD_block.exe:ADD_block.o my_rtiostream.o rtIOStream_TCPIP.o rtIOStream_utils.o test_model.o
+#	$(Cpp) ADD_block.o my_rtiostream.o rtIOStream_TCPIP.o rtIOStream_utils.o test_model.o -o ADD_block.exe
+
+relay.exe:relay.o my_rtiostream.o rtIOStream_TCPIP.o rtIOStream_utils.o
+	$(Cpp) relay.o my_rtiostream.o rtIOStream_TCPIP.o rtIOStream_utils.o -o relay.exe
+
+relay2.exe:relay2.o my_rtiostream.o rtIOStream_TCPIP.o rtIOStream_utils.o
+	$(Cpp) relay2.o my_rtiostream.o rtIOStream_TCPIP.o rtIOStream_utils.o -o relay2.exe
+
+relay2.o:relay2.cpp my_rtiostream.h $(MATLABWORK)include/rtwtypes.h
+	$(Cpp) -c relay2.cpp -I $(MATLABWORK)include/ -o relay2.o
+
+my_rtiostream.o:my_rtiostream_wrapper.cpp my_rtiostream.h
+	$(Cpp) -c -o my_rtiostream.o -I $(MATLABWORK)include/ my_rtiostream_wrapper.cpp
+
+rtIOStream_TCPIP.o:$(MATLABWORK)include/rtiostream.h $(MATLABWORK)src/rtiostream_tcpip.c
+	$(Cpp) -c $(MATLABWORK)src/rtiostream_tcpip.c -I $(MATLABWORK)include/ -o rtIOStream_tcpip.o
+
+rtIOStream_utils.o:$(MATLABWORK)include/rtiostream_utils.h $(MATLABWORK)src/rtiostream_utils.c
+	$(Cpp) -c $(MATLABWORK)src/rtiostream_utils.c -I $(MATLABWORK)include/ -o rtIOStream_utils.o
+
+#test_model.o:$(TEST_MODEL_DIR)test_model.c $(TEST_MODEL_DIR)test_model.h $(TEST_MODEL_DIR)test_model_private.h $(MATLABWORK)/include/rtwtypes.h
+	$(Cpp) -c $(TEST_MODEL_DIR)test_model.c -I $(TEST_MODEL_DIR) -o test_model.o
+
+relay.o:relay.cpp my_rtiostream.h $(MATLABWORK)include/rtwtypes.h
+	$(Cpp) -c relay.cpp -I $(MATLABWORK)include/ -o relay.o
+
+#ADD_block.o:ADD_block.cpp $(MATLABWORK)include/rtwtypes.h $(TEST_MODEL_DIR)test_model.h my_rtiostream.h
+#	$(Cpp) -c ADD_block.cpp -I $(MATLABWORK)include/ -I $(TEST_MODEL_DIR) -o ADD_block.o

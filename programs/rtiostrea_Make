@@ -1,0 +1,31 @@
+Cpp = g++
+CC = gcc
+flags = `/usr/local/llvm/llvm-3.6.2-build/Release+Asserts/bin/llvm-config --cxxflags`
+LDflags = `/usr/local/llvm/llvm-3.6.2-build/Release+Asserts/bin/llvm-config --ldflags --libs`
+MATLABWORK = /usr/local/matlab/
+#targetはコンパイルしたいファイルをmake実行時に指定する
+#target = LLVMSim
+
+LLVMSim.exe:LLVMSim.o IRSim.o
+	$(Cpp) $(flags) LLVMSim.o IRSim.o $(LDflags) -o LLVMSim.exe
+
+LLVMSim.o:LLVMSim.cpp
+	$(Cpp) $(flags) LLVMSim.cpp -c -o LLVMSim.o
+
+IRSimTest:IRSimTest.o IRSim.o
+	$(Cpp) IRSim.o IRSimTest.o -o IRSimTest.exe
+
+IRSimTest.o:IRSimTest.cpp
+	$(Cpp) -c IRSimTest.cpp -I /usr/local/llvm/program
+
+IRSim.o:IRSim.cpp IRSim.h
+	$(Cpp) -c IRSim.cpp -o IRSim.o
+
+rtIOStream_TCPIP.o:$(MATLABWORK)include/rtiostream.h $(MATLABWORK)src/rtiostream_tcpip.c
+	$(CC) -c $(MATLABWORK)src/rtiostream_tcpip.c -I $(MATLABWORK)include/ -o rtIOStream_tcpip.o
+
+rtIOStreamTest.o:rtIOStreamTest.c $(MATLABWORK)include/rtiostream.h
+	$(CC) -c rtIOStreamTest.c -o rtIOStreamTest.o
+
+rtIOStream_TCPIPTest:rtIOStream_TCPIP.o rtIOStreamTest.o
+	$(CC) rtIOStream_tcpip.o rtIOStreamTest.o -o rtIOStream_TCPIPTest.exe

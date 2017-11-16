@@ -1,0 +1,11 @@
+#include <iostream>
+
+
+class MyType{
+};
+
+class MyINT : public MyType{
+};
+
+class MyDouble : public MyType{
+};

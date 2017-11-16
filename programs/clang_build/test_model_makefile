@@ -1,0 +1,21 @@
+clang = /usr/local/llvm/llvm-3.6.2-build/Release+Asserts/bin/clang -emit-llvm
+llvm-dis = /usr/local/llvm/llvm-3.6.2-build/Release+Asserts/bin/llvm-dis
+llvm-link = /usr/local/llvm/llvm-3.6.2-build/Release+Asserts/bin/llvm-link
+matlab_dir = /usr/local/matlab/test_model_ert_rtw/
+
+test_model.ll:ert_main.o test_model.o
+	$(llvm-link) -o test_model.bc ert_main.o test_model.o
+	$(llvm-dis) -o test_model.ll test_model.bc
+	rm ert_main.o test_model.o
+
+ert_main.o:$(matlab_dir)ert_main.c $(matlab_dir)test_model.h $(matlab_dir)rtwtypes.h
+	$(clang) -o ert_main.o -c -I $(matlab_dir) $(matlab_dir)ert_main.c
+
+ert_main.ll:$(matlab_dir)ert_main.c $(matlab_dir)test_model.h $(matlab_dir)rtwtypes.h
+	$(clang) -I $(matlab_dir) $(matlab_dir)ert_main.c -emit-llvm -S -o ert_main.ll
+
+test_model.o:$(matlab_dir)test_model.c $(matlab_dir)test_model.h $(matlab_dir)test_model_private.h
+	$(clang) -o test_model.o -c -I $(matlab_dir) $(matlab_dir)test_model.c
+
+test_model_Internal.ll:$(matlab_dir)test_model.c $(matlab_dir)test_model.h $(matlab_dir)test_model_private.h
+	$(clang) -c -I $(matlab_dir) $(matlab_dir)test_model.c -emit-llvm -S -o test_model_Internal.ll

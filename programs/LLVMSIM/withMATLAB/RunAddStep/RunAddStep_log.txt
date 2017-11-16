@@ -1,0 +1,497 @@
+GlobalList size =7
+rtIOStreamOpen
+
+test_model_initialize
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+
+test_model_step
+
+	entry
+--------Run End--------
+
+RegID:Value:DValue:Address:Name:kind
+    0:rt_OneStep.OverrunFlag:       0:INTEGER
+    1:  .str:       1:ARRAY
+    2: .str1:       9:ARRAY
+    3:test_model_M_:     169:STRUCT
+    4:test_model_U:     170:STRUCT
+    5:test_model_Y:     172:STRUCT
+    6:  reg0:20365011074.0000:DOUBLE
+    7:  reg1:12586269025.0000:DOUBLE
+    8:   add:32951280099.0000:DOUBLE
+RealAdd    :Address:Data:Kind:NumOfData=172
+0x600051ae0:   1:           :     :string
+0x60004fe70:   2:           :     :string
+0x60004de90:   3:           :     :string
+0x60004fe10:   4:           :     :string
+0x600052c60:   5:           :     :string
+0x600052220:   6:           :     :string
+0x600056870:   7:           :     :string
+0x60004dde0:   8:(BlockEnd) :     :string
+0x600050de0:   9:           :     :string
+0x600053330:  10:           :     :string
+0x600053350:  11:           :     :string
+0x6000508b0:  12:           :     :string
+0x6000508d0:  13:           :     :string
+0x600052f60:  14:           :     :string
+0x600052f80:  15:           :     :string
+0x6000530a0:  16:           :     :string
+0x6000530c0:  17:           :     :string
+0x6000524c0:  18:           :     :string
+0x6000524e0:  19:           :     :string
+0x600052930:  20:           :     :string
+0x600052950:  21:           :     :string
+0x600054be0:  22:           :     :string
+0x600054c00:  23:           :     :string
+0x600053160:  24:           :     :string
+0x600053180:  25:           :     :string
+0x600054530:  26:           :     :string
+0x600054550:  27:           :     :string
+0x600053400:  28:           :     :string
+0x600053420:  29:           :     :string
+0x6000545d0:  30:           :     :string
+0x6000545f0:  31:           :     :string
+0x600054dd0:  32:           :     :string
+0x600054df0:  33:           :     :string
+0x600054450:  34:           :     :string
+0x600054470:  35:           :     :string
+0x600056790:  36:           :     :string
+0x6000567b0:  37:           :     :string
+0x60004dbd0:  38:           :     :string
+0x60004dbf0:  39:           :     :string
+0x60004dc10:  40:           :     :string
+0x600052580:  41:           :     :string
+0x6000525a0:  42:           :     :string
+0x6000525c0:  43:           :     :string
+0x60004dd20:  44:           :     :string
+0x60004dd40:  45:           :     :string
+0x60004dd60:  46:           :     :string
+0x60004dd80:  47:           :     :string
+0x60004d9d0:  48:           :     :string
+0x60004d9f0:  49:           :     :string
+0x60004da10:  50:           :     :string
+0x60004da30:  51:           :     :string
+0x60004da50:  52:           :     :string
+0x60004fed0:  53:           :     :string
+0x60004fef0:  54:           :     :string
+0x60004ff10:  55:           :     :string
+0x60004ff30:  56:           :     :string
+0x60004ff50:  57:           :     :string
+0x60004ff70:  58:           :     :string
+0x60004ff90:  59:           :     :string
+0x60004ffb0:  60:           :     :string
+0x60004ffd0:  61:           :     :string
+0x60004fff0:  62:           :     :string
+0x600050010:  63:           :     :string
+0x600050030:  64:           :     :string
+0x600050050:  65:           :     :string
+0x600054fc0:  66:           :     :string
+0x600054fe0:  67:           :     :string
+0x600055000:  68:           :     :string
+0x600055020:  69:           :     :string
+0x600055040:  70:           :     :string
+0x600055060:  71:           :     :string
+0x600055080:  72:           :     :string
+0x6000550a0:  73:           :     :string
+0x6000550c0:  74:           :     :string
+0x6000550e0:  75:           :     :string
+0x600055100:  76:           :     :string
+0x600055120:  77:           :     :string
+0x600055140:  78:           :     :string
+0x600055bd0:  79:           :     :string
+0x600055bf0:  80:           :     :string
+0x600055c10:  81:           :     :string
+0x600055c30:  82:           :     :string
+0x600055c50:  83:           :     :string
+0x600055c70:  84:           :     :string
+0x600055c90:  85:           :     :string
+0x600055cb0:  86:           :     :string
+0x600055cd0:  87:           :     :string
+0x600055cf0:  88:           :     :string
+0x600055d10:  89:           :     :string
+0x600055d30:  90:           :     :string
+0x600055d50:  91:           :     :string
+0x600055d70:  92:           :     :string
+0x600055d90:  93:           :     :string
+0x600055db0:  94:           :     :string
+0x600055dd0:  95:           :     :string
+0x600055df0:  96:           :     :string
+0x600055e10:  97:           :     :string
+0x600055e30:  98:           :     :string
+0x600055e50:  99:           :     :string
+0x600055e70: 100:           :     :string
+0x600055e90: 101:           :     :string
+0x600055eb0: 102:           :     :string
+0x600055ed0: 103:           :     :string
+0x600055ef0: 104:           :     :string
+0x600055f10: 105:           :     :string
+0x600055f30: 106:           :     :string
+0x600055f50: 107:           :     :string
+0x600055f70: 108:           :     :string
+0x600055f90: 109:           :     :string
+0x600055fb0: 110:           :     :string
+0x600055fd0: 111:           :     :string
+0x600055190: 112:           :     :string
+0x6000551b0: 113:           :     :string
+0x6000551d0: 114:           :     :string
+0x6000551f0: 115:           :     :string
+0x600055210: 116:           :     :string
+0x600055230: 117:           :     :string
+0x600055250: 118:           :     :string
+0x600055270: 119:           :     :string
+0x600055290: 120:           :     :string
+0x6000552b0: 121:           :     :string
+0x6000552d0: 122:           :     :string
+0x6000552f0: 123:           :     :string
+0x600055310: 124:           :     :string
+0x600055330: 125:           :     :string
+0x600055350: 126:           :     :string
+0x600055370: 127:           :     :string
+0x600055390: 128:           :     :string
+0x6000553b0: 129:           :     :string
+0x6000553d0: 130:           :     :string
+0x6000553f0: 131:           :     :string
+0x600055410: 132:           :     :string
+0x600055430: 133:           :     :string
+0x600055450: 134:           :     :string
+0x600055470: 135:           :     :string
+0x600055490: 136:           :     :string
+0x6000554b0: 137:           :     :string
+0x6000554d0: 138:           :     :string
+0x6000554f0: 139:           :     :string
+0x600055510: 140:           :     :string
+0x600055530: 141:           :     :string
+0x600055550: 142:           :     :string
+0x600055570: 143:           :     :string
+0x600055590: 144:           :     :string
+0x6000555b0: 145:           :     :string
+0x6000555d0: 146:           :     :string
+0x6000555f0: 147:           :     :string
+0x600055610: 148:           :     :string
+0x600055630: 149:           :     :string
+0x600055650: 150:           :     :string
+0x600055670: 151:           :     :string
+0x600055690: 152:           :     :string
+0x6000556b0: 153:           :     :string
+0x6000556d0: 154:           :     :string
+0x6000556f0: 155:           :     :string
+0x600055710: 156:           :     :string
+0x600055730: 157:           :     :string
+0x600055750: 158:           :     :string
+0x600055770: 159:           :     :string
+0x600055790: 160:           :     :string
+0x6000557b0: 161:           :     :string
+0x6000557d0: 162:           :     :string
+0x6000557f0: 163:           :     :string
+0x600055810: 164:           :     :string
+0x600055830: 165:           :     :string
+0x600055850: 166:           :     :string
+0x600055870: 167:           :     :string
+0x600055890: 168:(BlockEnd) :     :string
+0x60004de00: 169:(BlockEnd) :    0:POINTER
+0x6000559a0: 170:           :20365011074.0000:DOUBLE
+0x6000559c0: 171:(BlockEnd) :12586269025.0000:DOUBLE
+0x60004c140: 172:(BlockEnd) :32951280099.0000:DOUBLE

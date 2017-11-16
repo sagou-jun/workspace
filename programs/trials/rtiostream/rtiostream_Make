@@ -1,0 +1,20 @@
+Cpp = g++
+CC = gcc
+MATLABWORK = /usr/local/matlab/
+#targetはコンパイルしたいファイルをmake実行時に指定する
+#target = LLVMSim
+
+rtIOStream_TCPIPTest:rtIOStream_TCPIP.o rtIOStreamTest.o rtiostream_Make
+	$(Cpp) rtIOStream_tcpip.o rtIOStreamTest.o -o rtIOStream_TCPIPTest.exe
+
+rtIOStream_TCPIP.o:$(MATLABWORK)include/rtiostream.h $(MATLABWORK)src/rtiostream_tcpip.c rtiostream_Make
+	$(Cpp) -c $(MATLABWORK)src/rtiostream_tcpip.c -I $(MATLABWORK)include/ -o rtIOStream_tcpip.o
+
+rtIOStreamTest.o:rtIOStreamTest.c rtiostream_Make
+	$(Cpp) -c rtIOStreamTest.c -I $(MATLABWORK)include/ -o rtIOStreamTest.o
+
+rtIO_debug:$(MATLABWORK)include/rtiostream.h $(MATLABWORK)src/rtiostream_tcpip.c rtIOStreamTest.c rtiostream_Make
+	$(Cpp) -c $(MATLABWORK)src/rtiostream_tcpip.c -I $(MATLABWORK)include/ -g -o rtIOStream_tcpip_debug.o
+	$(Cpp) -c rtIOStreamTest.c -I $(MATLABWORK)include/ -g -o rtIOStreamTest_debug.o
+	$(Cpp) rtIOStream_tcpip_debug.o rtIOStreamTest_debug.o -g -o rtIOStream_TCPIPTest.exe
+

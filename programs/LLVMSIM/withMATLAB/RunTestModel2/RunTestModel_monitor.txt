@@ -1,0 +1,672 @@
+
+test_model2_initialize
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=0
+IRSim::MemDataExport test_model2_Y 1 Data=0
+IRSim::MemDataExport test_model2_Y 2 Data=0
+IRSim::MemDataInport test_model2_U 0 1
+IRSim::MemDataInport test_model2_U 1 0
+IRSim::MemDataInport test_model2_U 2 1
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=1
+IRSim::MemDataExport test_model2_Y 1 Data=1
+IRSim::MemDataExport test_model2_Y 2 Data=-0.618034
+IRSim::MemDataInport test_model2_U 0 1
+IRSim::MemDataInport test_model2_U 1 1
+IRSim::MemDataInport test_model2_U 2 1
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=2
+IRSim::MemDataExport test_model2_Y 1 Data=1
+IRSim::MemDataExport test_model2_Y 2 Data=-0.618034
+IRSim::MemDataInport test_model2_U 0 2
+IRSim::MemDataInport test_model2_U 1 1
+IRSim::MemDataInport test_model2_U 2 1
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=3
+IRSim::MemDataExport test_model2_Y 1 Data=2
+IRSim::MemDataExport test_model2_Y 2 Data=0.381966
+IRSim::MemDataInport test_model2_U 0 3
+IRSim::MemDataInport test_model2_U 1 2
+IRSim::MemDataInport test_model2_U 2 2
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=5
+IRSim::MemDataExport test_model2_Y 1 Data=1.5
+IRSim::MemDataExport test_model2_Y 2 Data=-0.118034
+IRSim::MemDataInport test_model2_U 0 5
+IRSim::MemDataInport test_model2_U 1 3
+IRSim::MemDataInport test_model2_U 2 3
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=8
+IRSim::MemDataExport test_model2_Y 1 Data=1.66667
+IRSim::MemDataExport test_model2_Y 2 Data=0.0486327
+IRSim::MemDataInport test_model2_U 0 8
+IRSim::MemDataInport test_model2_U 1 5
+IRSim::MemDataInport test_model2_U 2 5
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=13
+IRSim::MemDataExport test_model2_Y 1 Data=1.6
+IRSim::MemDataExport test_model2_Y 2 Data=-0.018034
+IRSim::MemDataInport test_model2_U 0 13
+IRSim::MemDataInport test_model2_U 1 8
+IRSim::MemDataInport test_model2_U 2 8
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=21
+IRSim::MemDataExport test_model2_Y 1 Data=1.625
+IRSim::MemDataExport test_model2_Y 2 Data=0.00696601
+IRSim::MemDataInport test_model2_U 0 21
+IRSim::MemDataInport test_model2_U 1 13
+IRSim::MemDataInport test_model2_U 2 13
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=34
+IRSim::MemDataExport test_model2_Y 1 Data=1.61538
+IRSim::MemDataExport test_model2_Y 2 Data=-0.00264937
+IRSim::MemDataInport test_model2_U 0 34
+IRSim::MemDataInport test_model2_U 1 21
+IRSim::MemDataInport test_model2_U 2 21
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=55
+IRSim::MemDataExport test_model2_Y 1 Data=1.61905
+IRSim::MemDataExport test_model2_Y 2 Data=0.00101363
+IRSim::MemDataInport test_model2_U 0 55
+IRSim::MemDataInport test_model2_U 1 34
+IRSim::MemDataInport test_model2_U 2 34
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=89
+IRSim::MemDataExport test_model2_Y 1 Data=1.61765
+IRSim::MemDataExport test_model2_Y 2 Data=-0.00038693
+IRSim::MemDataInport test_model2_U 0 89
+IRSim::MemDataInport test_model2_U 1 55
+IRSim::MemDataInport test_model2_U 2 55
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=144
+IRSim::MemDataExport test_model2_Y 1 Data=1.61818
+IRSim::MemDataExport test_model2_Y 2 Data=0.000147829
+IRSim::MemDataInport test_model2_U 0 144
+IRSim::MemDataInport test_model2_U 1 89
+IRSim::MemDataInport test_model2_U 2 89
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=233
+IRSim::MemDataExport test_model2_Y 1 Data=1.61798
+IRSim::MemDataExport test_model2_Y 2 Data=-5.64607e-05
+IRSim::MemDataInport test_model2_U 0 233
+IRSim::MemDataInport test_model2_U 1 144
+IRSim::MemDataInport test_model2_U 2 144
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=377
+IRSim::MemDataExport test_model2_Y 1 Data=1.61806
+IRSim::MemDataExport test_model2_Y 2 Data=2.15668e-05
+IRSim::MemDataInport test_model2_U 0 377
+IRSim::MemDataInport test_model2_U 1 233
+IRSim::MemDataInport test_model2_U 2 233
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=610
+IRSim::MemDataExport test_model2_Y 1 Data=1.61803
+IRSim::MemDataExport test_model2_Y 2 Data=-8.23768e-06
+IRSim::MemDataInport test_model2_U 0 610
+IRSim::MemDataInport test_model2_U 1 377
+IRSim::MemDataInport test_model2_U 2 377
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=987
+IRSim::MemDataExport test_model2_Y 1 Data=1.61804
+IRSim::MemDataExport test_model2_Y 2 Data=3.14653e-06
+IRSim::MemDataInport test_model2_U 0 987
+IRSim::MemDataInport test_model2_U 1 610
+IRSim::MemDataInport test_model2_U 2 610
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=1597
+IRSim::MemDataExport test_model2_Y 1 Data=1.61803
+IRSim::MemDataExport test_model2_Y 2 Data=-1.20186e-06
+IRSim::MemDataInport test_model2_U 0 1597
+IRSim::MemDataInport test_model2_U 1 987
+IRSim::MemDataInport test_model2_U 2 987
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=2584
+IRSim::MemDataExport test_model2_Y 1 Data=1.61803
+IRSim::MemDataExport test_model2_Y 2 Data=4.59072e-07
+IRSim::MemDataInport test_model2_U 0 2584
+IRSim::MemDataInport test_model2_U 1 1597
+IRSim::MemDataInport test_model2_U 2 1597
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=4181
+IRSim::MemDataExport test_model2_Y 1 Data=1.61803
+IRSim::MemDataExport test_model2_Y 2 Data=-1.7535e-07
+IRSim::MemDataInport test_model2_U 0 4181
+IRSim::MemDataInport test_model2_U 1 2584
+IRSim::MemDataInport test_model2_U 2 2584
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=6765
+IRSim::MemDataExport test_model2_Y 1 Data=1.61803
+IRSim::MemDataExport test_model2_Y 2 Data=6.69777e-08
+IRSim::MemDataInport test_model2_U 0 6765
+IRSim::MemDataInport test_model2_U 1 4181
+IRSim::MemDataInport test_model2_U 2 4181
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=10946
+IRSim::MemDataExport test_model2_Y 1 Data=1.61803
+IRSim::MemDataExport test_model2_Y 2 Data=-2.55832e-08
+IRSim::MemDataInport test_model2_U 0 10946
+IRSim::MemDataInport test_model2_U 1 6765
+IRSim::MemDataInport test_model2_U 2 6765
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=17711
+IRSim::MemDataExport test_model2_Y 1 Data=1.61803
+IRSim::MemDataExport test_model2_Y 2 Data=9.77191e-09
+IRSim::MemDataInport test_model2_U 0 17711
+IRSim::MemDataInport test_model2_U 1 10946
+IRSim::MemDataInport test_model2_U 2 10946
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=28657
+IRSim::MemDataExport test_model2_Y 1 Data=1.61803
+IRSim::MemDataExport test_model2_Y 2 Data=-3.73254e-09
+IRSim::MemDataInport test_model2_U 0 28657
+IRSim::MemDataInport test_model2_U 1 17711
+IRSim::MemDataInport test_model2_U 2 17711
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=46368
+IRSim::MemDataExport test_model2_Y 1 Data=1.61803
+IRSim::MemDataExport test_model2_Y 2 Data=1.4257e-09
+IRSim::MemDataInport test_model2_U 0 46368
+IRSim::MemDataInport test_model2_U 1 28657
+IRSim::MemDataInport test_model2_U 2 28657
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=75025
+IRSim::MemDataExport test_model2_Y 1 Data=1.61803
+IRSim::MemDataExport test_model2_Y 2 Data=-5.4457e-10
+IRSim::MemDataInport test_model2_U 0 75025
+IRSim::MemDataInport test_model2_U 1 46368
+IRSim::MemDataInport test_model2_U 2 46368
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=121393
+IRSim::MemDataExport test_model2_Y 1 Data=1.61803
+IRSim::MemDataExport test_model2_Y 2 Data=2.08007e-10
+IRSim::MemDataInport test_model2_U 0 121393
+IRSim::MemDataInport test_model2_U 1 75025
+IRSim::MemDataInport test_model2_U 2 75025
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=196418
+IRSim::MemDataExport test_model2_Y 1 Data=1.61803
+IRSim::MemDataExport test_model2_Y 2 Data=-7.94518e-11
+IRSim::MemDataInport test_model2_U 0 196418
+IRSim::MemDataInport test_model2_U 1 121393
+IRSim::MemDataInport test_model2_U 2 121393
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=317811
+IRSim::MemDataExport test_model2_Y 1 Data=1.61803
+IRSim::MemDataExport test_model2_Y 2 Data=3.03477e-11
+IRSim::MemDataInport test_model2_U 0 317811
+IRSim::MemDataInport test_model2_U 1 196418
+IRSim::MemDataInport test_model2_U 2 196418
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=514229
+IRSim::MemDataExport test_model2_Y 1 Data=1.61803
+IRSim::MemDataExport test_model2_Y 2 Data=-1.15918e-11
+IRSim::MemDataInport test_model2_U 0 514229
+IRSim::MemDataInport test_model2_U 1 317811
+IRSim::MemDataInport test_model2_U 2 317811
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=832040
+IRSim::MemDataExport test_model2_Y 1 Data=1.61803
+IRSim::MemDataExport test_model2_Y 2 Data=4.42757e-12
+IRSim::MemDataInport test_model2_U 0 832040
+IRSim::MemDataInport test_model2_U 1 514229
+IRSim::MemDataInport test_model2_U 2 514229
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=1.34627e+06
+IRSim::MemDataExport test_model2_Y 1 Data=1.61803
+IRSim::MemDataExport test_model2_Y 2 Data=-1.69131e-12
+IRSim::MemDataInport test_model2_U 0 1.34627e+06
+IRSim::MemDataInport test_model2_U 1 832040
+IRSim::MemDataInport test_model2_U 2 832040
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=2.17831e+06
+IRSim::MemDataExport test_model2_Y 1 Data=1.61803
+IRSim::MemDataExport test_model2_Y 2 Data=6.45928e-13
+IRSim::MemDataInport test_model2_U 0 2.17831e+06
+IRSim::MemDataInport test_model2_U 1 1.34627e+06
+IRSim::MemDataInport test_model2_U 2 1.34627e+06
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=3.52458e+06
+IRSim::MemDataExport test_model2_Y 1 Data=1.61803
+IRSim::MemDataExport test_model2_Y 2 Data=-2.46692e-13
+IRSim::MemDataInport test_model2_U 0 3.52458e+06
+IRSim::MemDataInport test_model2_U 1 2.17831e+06
+IRSim::MemDataInport test_model2_U 2 2.17831e+06
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=5.70289e+06
+IRSim::MemDataExport test_model2_Y 1 Data=1.61803
+IRSim::MemDataExport test_model2_Y 2 Data=9.41469e-14
+IRSim::MemDataInport test_model2_U 0 5.70289e+06
+IRSim::MemDataInport test_model2_U 1 3.52458e+06
+IRSim::MemDataInport test_model2_U 2 3.52458e+06
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=9.22746e+06
+IRSim::MemDataExport test_model2_Y 1 Data=1.61803
+IRSim::MemDataExport test_model2_Y 2 Data=-3.59712e-14
+IRSim::MemDataInport test_model2_U 0 9.22746e+06
+IRSim::MemDataInport test_model2_U 1 5.70289e+06
+IRSim::MemDataInport test_model2_U 2 5.70289e+06
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=1.49304e+07
+IRSim::MemDataExport test_model2_Y 1 Data=1.61803
+IRSim::MemDataExport test_model2_Y 2 Data=1.37668e-14
+IRSim::MemDataInport test_model2_U 0 1.49304e+07
+IRSim::MemDataInport test_model2_U 1 9.22746e+06
+IRSim::MemDataInport test_model2_U 2 9.22746e+06
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=2.41578e+07
+IRSim::MemDataExport test_model2_Y 1 Data=1.61803
+IRSim::MemDataExport test_model2_Y 2 Data=-5.32907e-15
+IRSim::MemDataInport test_model2_U 0 2.41578e+07
+IRSim::MemDataInport test_model2_U 1 1.49304e+07
+IRSim::MemDataInport test_model2_U 2 1.49304e+07
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=3.90882e+07
+IRSim::MemDataExport test_model2_Y 1 Data=1.61803
+IRSim::MemDataExport test_model2_Y 2 Data=1.9984e-15
+IRSim::MemDataInport test_model2_U 0 3.90882e+07
+IRSim::MemDataInport test_model2_U 1 2.41578e+07
+IRSim::MemDataInport test_model2_U 2 2.41578e+07
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=6.3246e+07
+IRSim::MemDataExport test_model2_Y 1 Data=1.61803
+IRSim::MemDataExport test_model2_Y 2 Data=-8.88178e-16
+IRSim::MemDataInport test_model2_U 0 6.3246e+07
+IRSim::MemDataInport test_model2_U 1 3.90882e+07
+IRSim::MemDataInport test_model2_U 2 3.90882e+07
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=1.02334e+08
+IRSim::MemDataExport test_model2_Y 1 Data=1.61803
+IRSim::MemDataExport test_model2_Y 2 Data=2.22045e-16
+IRSim::MemDataInport test_model2_U 0 1.02334e+08
+IRSim::MemDataInport test_model2_U 1 6.3246e+07
+IRSim::MemDataInport test_model2_U 2 6.3246e+07
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=1.6558e+08
+IRSim::MemDataExport test_model2_Y 1 Data=1.61803
+IRSim::MemDataExport test_model2_Y 2 Data=-2.22045e-16
+IRSim::MemDataInport test_model2_U 0 1.6558e+08
+IRSim::MemDataInport test_model2_U 1 1.02334e+08
+IRSim::MemDataInport test_model2_U 2 1.02334e+08
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=2.67914e+08
+IRSim::MemDataExport test_model2_Y 1 Data=1.61803
+IRSim::MemDataExport test_model2_Y 2 Data=0
+IRSim::MemDataInport test_model2_U 0 2.67914e+08
+IRSim::MemDataInport test_model2_U 1 1.6558e+08
+IRSim::MemDataInport test_model2_U 2 1.6558e+08
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=4.33494e+08
+IRSim::MemDataExport test_model2_Y 1 Data=1.61803
+IRSim::MemDataExport test_model2_Y 2 Data=0
+IRSim::MemDataInport test_model2_U 0 4.33494e+08
+IRSim::MemDataInport test_model2_U 1 2.67914e+08
+IRSim::MemDataInport test_model2_U 2 2.67914e+08
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=7.01409e+08
+IRSim::MemDataExport test_model2_Y 1 Data=1.61803
+IRSim::MemDataExport test_model2_Y 2 Data=0
+IRSim::MemDataInport test_model2_U 0 7.01409e+08
+IRSim::MemDataInport test_model2_U 1 4.33494e+08
+IRSim::MemDataInport test_model2_U 2 4.33494e+08
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=1.1349e+09
+IRSim::MemDataExport test_model2_Y 1 Data=1.61803
+IRSim::MemDataExport test_model2_Y 2 Data=0
+IRSim::MemDataInport test_model2_U 0 1.1349e+09
+IRSim::MemDataInport test_model2_U 1 7.01409e+08
+IRSim::MemDataInport test_model2_U 2 7.01409e+08
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=1.83631e+09
+IRSim::MemDataExport test_model2_Y 1 Data=1.61803
+IRSim::MemDataExport test_model2_Y 2 Data=0
+IRSim::MemDataInport test_model2_U 0 1.83631e+09
+IRSim::MemDataInport test_model2_U 1 1.1349e+09
+IRSim::MemDataInport test_model2_U 2 1.1349e+09
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=2.97122e+09
+IRSim::MemDataExport test_model2_Y 1 Data=1.61803
+IRSim::MemDataExport test_model2_Y 2 Data=0
+IRSim::MemDataInport test_model2_U 0 2.97122e+09
+IRSim::MemDataInport test_model2_U 1 1.83631e+09
+IRSim::MemDataInport test_model2_U 2 1.83631e+09
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=4.80753e+09
+IRSim::MemDataExport test_model2_Y 1 Data=1.61803
+IRSim::MemDataExport test_model2_Y 2 Data=0
+IRSim::MemDataInport test_model2_U 0 4.80753e+09
+IRSim::MemDataInport test_model2_U 1 2.97122e+09
+IRSim::MemDataInport test_model2_U 2 2.97122e+09
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=7.77874e+09
+IRSim::MemDataExport test_model2_Y 1 Data=1.61803
+IRSim::MemDataExport test_model2_Y 2 Data=0
+IRSim::MemDataInport test_model2_U 0 7.77874e+09
+IRSim::MemDataInport test_model2_U 1 4.80753e+09
+IRSim::MemDataInport test_model2_U 2 4.80753e+09
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=1.25863e+10
+IRSim::MemDataExport test_model2_Y 1 Data=1.61803
+IRSim::MemDataExport test_model2_Y 2 Data=0
+IRSim::MemDataInport test_model2_U 0 1.25863e+10
+IRSim::MemDataInport test_model2_U 1 7.77874e+09
+IRSim::MemDataInport test_model2_U 2 7.77874e+09
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=2.0365e+10
+IRSim::MemDataExport test_model2_Y 1 Data=1.61803
+IRSim::MemDataExport test_model2_Y 2 Data=0
+IRSim::MemDataInport test_model2_U 0 2.0365e+10
+IRSim::MemDataInport test_model2_U 1 1.25863e+10
+IRSim::MemDataInport test_model2_U 2 1.25863e+10
+IRSim::MemDataInport test_model2_U 3 1.61803
+
+test_model2_step
+
+	entry
+--------Run End--------
+
+IRSim::MemDataExport test_model2_Y 0 Data=3.29513e+10
+IRSim::MemDataExport test_model2_Y 1 Data=1.61803
+IRSim::MemDataExport test_model2_Y 2 Data=0

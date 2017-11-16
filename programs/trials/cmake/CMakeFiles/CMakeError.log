@@ -1,0 +1,45 @@
+Determining if the C compiler works failed with the following output:
+Change Dir: /usr/local/programs/trials/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/cygdrive/c/Program Files/MATLAB/R2014a/bin/win64/gmake.exe" "cmTC_a2d55/fast"
+C:/Program Files/MATLAB/R2014a/bin/win64/gmake -f CMakeFiles/cmTC_a2d55.dir/build.make CMakeFiles/cmTC_a2d55.dir/build
+gmake[1]: Entering directory `C:/cygwin64/usr/local/programs/trials/cmake/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a2d55.dir/testCCompiler.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_a2d55.dir/testCCompiler.c.o   -c /usr/local/programs/trials/cmake/CMakeFiles/CMakeTmp/testCCompiler.c
+process_begin: CreateProcess(NULL, /usr/bin/cc -o CMakeFiles/cmTC_a2d55.dir/testCCompiler.c.o -c /usr/local/programs/trials/cmake/CMakeFiles/CMakeTmp/testCCompiler.c, ...) failed.
+make (e=2): 指定されたファイルが見つかりません。
+gmake[1]: *** [CMakeFiles/cmTC_a2d55.dir/testCCompiler.c.o] Error 2
+gmake[1]: Leaving directory `C:/cygwin64/usr/local/programs/trials/cmake/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_a2d55/fast] Error 2
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /usr/local/programs/trials/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/cygdrive/c/Program Files/MATLAB/R2014a/bin/win64/gmake.exe" "cmTC_27c9b/fast"
+C:/Program Files/MATLAB/R2014a/bin/win64/gmake -f CMakeFiles/cmTC_27c9b.dir/build.make CMakeFiles/cmTC_27c9b.dir/build
+gmake[1]: Entering directory `C:/cygwin64/usr/local/programs/trials/cmake/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_27c9b.dir/testCCompiler.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_27c9b.dir/testCCompiler.c.o   -c /usr/local/programs/trials/cmake/CMakeFiles/CMakeTmp/testCCompiler.c
+process_begin: CreateProcess(NULL, /usr/bin/cc -o CMakeFiles/cmTC_27c9b.dir/testCCompiler.c.o -c /usr/local/programs/trials/cmake/CMakeFiles/CMakeTmp/testCCompiler.c, ...) failed.
+make (e=2): 指定されたファイルが見つかりません。
+gmake[1]: *** [CMakeFiles/cmTC_27c9b.dir/testCCompiler.c.o] Error 2
+gmake[1]: Leaving directory `C:/cygwin64/usr/local/programs/trials/cmake/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_27c9b/fast] Error 2
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /usr/local/programs/trials/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/cygdrive/c/Program Files/MATLAB/R2014a/bin/win64/gmake.exe" "cmTC_0b44a/fast"
+C:/Program Files/MATLAB/R2014a/bin/win64/gmake -f CMakeFiles/cmTC_0b44a.dir/build.make CMakeFiles/cmTC_0b44a.dir/build
+gmake[1]: Entering directory `C:/cygwin64/usr/local/programs/trials/cmake/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0b44a.dir/testCCompiler.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_0b44a.dir/testCCompiler.c.o   -c /usr/local/programs/trials/cmake/CMakeFiles/CMakeTmp/testCCompiler.c
+process_begin: CreateProcess(NULL, /usr/bin/cc -o CMakeFiles/cmTC_0b44a.dir/testCCompiler.c.o -c /usr/local/programs/trials/cmake/CMakeFiles/CMakeTmp/testCCompiler.c, ...) failed.
+make (e=2): 指定されたファイルが見つかりません。
+gmake[1]: *** [CMakeFiles/cmTC_0b44a.dir/testCCompiler.c.o] Error 2
+gmake[1]: Leaving directory `C:/cygwin64/usr/local/programs/trials/cmake/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_0b44a/fast] Error 2
+
+
