@@ -1,0 +1,14 @@
+digraph "CFG for 'fn2' function" {
+	label="CFG for 'fn2' function";
+
+	Node0x600064be0 [shape=record,label="{entry:\l  %a1.addr = alloca double, align 8\l  %a2.addr = alloca double, align 8\l  %i = alloca i32, align 4\l  %rtn = alloca double, align 8\l  store double %a1, double* %a1.addr, align 8\l  store double %a2, double* %a2.addr, align 8\l  store double 0.000000e+00, double* %rtn, align 8\l  store i32 0, i32* %i, align 4\l  br label %for.cond\l}"];
+	Node0x600064be0 -> Node0x600065940;
+	Node0x600065940 [shape=record,label="{for.cond:                                         \l  %0 = load i32* %i, align 4\l  %cmp = icmp slt i32 %0, 10\l  br i1 %cmp, label %for.body, label %for.end\l|{<s0>T|<s1>F}}"];
+	Node0x600065940:s0 -> Node0x600065c00;
+	Node0x600065940:s1 -> Node0x600065d00;
+	Node0x600065c00 [shape=record,label="{for.body:                                         \l  %1 = load double* %a1.addr, align 8\l  %2 = load i32* %i, align 4\l  %conv = sitofp i32 %2 to double\l  %mul = fmul double %1, %conv\l  %3 = load double* %a2.addr, align 8\l  %div = fdiv double %mul, %3\l  %4 = load double* %rtn, align 8\l  %add = fadd double %4, %div\l  store double %add, double* %rtn, align 8\l  br label %for.inc\l}"];
+	Node0x600065c00 -> Node0x600066400;
+	Node0x600066400 [shape=record,label="{for.inc:                                          \l  %5 = load i32* %i, align 4\l  %inc = add nsw i32 %5, 1\l  store i32 %inc, i32* %i, align 4\l  br label %for.cond\l}"];
+	Node0x600066400 -> Node0x600065940;
+	Node0x600065d00 [shape=record,label="{for.end:                                          \l  %6 = load double* %rtn, align 8\l  ret double %6\l}"];
+}

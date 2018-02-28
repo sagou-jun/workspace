@@ -1,16 +1,14 @@
-#include<stdio.h>
+#define iteration 17
 
-int fib(int n){
-  if(n >= 2)
-    return fib(n-1)+fib(n-2);
-  if(n == 1)
+int fib(int i){
+  if(i <= 1)
     return 1;
   else
-    return 0;
+    return fib(i-1)+fib(i-2);
 }
 
 int main(){
-  int Fibonacci = fib(8);
-  printf("fib(%d) = %d\n",5,Fibonacci);
+  int fib17;
+  fib17 = fib(iteration);
   return 0;
 }

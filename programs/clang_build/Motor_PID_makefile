@@ -1,0 +1,18 @@
+clang = /usr/local/llvm/llvm-3.6.2-build/Release+Asserts/bin/clang -emit-llvm
+llvm-dis = /usr/local/llvm/llvm-3.6.2-build/Release+Asserts/bin/llvm-dis
+llvm-link = /usr/local/llvm/llvm-3.6.2-build/Release+Asserts/bin/llvm-link
+matlab_dir = /usr/local/matlab/+motor_pid/PID_controller_PILS_ert_rtw/
+
+PID_controller_PILS.ll:ert_main.o PID_controller_PILS.o PID_controller_PILS_data.o
+	$(llvm-link) -o PID_controller_PILS.bc ert_main.o PID_controller_PILS.o PID_controller_PILS_data.o
+	$(llvm-dis) -o PID_controller_PILS.ll PID_controller_PILS.bc
+	rm *.o
+
+ert_main.o:$(matlab_dir)ert_main.c $(matlab_dir)rtwtypes.h $(matlab_dir)PID_controller_PILS.h
+	$(clang) -o ert_main.o -c -I $(matlab_dir) $(matlab_dir)ert_main.c
+
+PID_controller_PILS.o:$(matlab_dir)PID_controller_PILS.c $(matlab_dir)PID_controller_PILS.h $(matlab_dir) $(matlab_dir)PID_controller_PILS_private.h
+	$(clang) -o PID_controller_PILS.o -c -I $(matlab_dir) $(matlab_dir)PID_controller_PILS.c
+
+PID_controller_PILS_data.o:$(matlab_dir)PID_controller_PILS_data.c $(matlab_dir)PID_controller_PILS.h $(matlab_dir)PID_controller_PILS_private.h
+	$(clang) -o PID_controller_PILS_data.o -c -I $(matlab_dir) $(matlab_dir)PID_controller_PILS_data.c

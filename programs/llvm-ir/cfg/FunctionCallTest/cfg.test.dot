@@ -1,0 +1,5 @@
+digraph "CFG for 'test' function" {
+	label="CFG for 'test' function";
+
+	Node0x600031800 [shape=record,label="{entry:\l  %a1.addr = alloca i32, align 4\l  %a2.addr = alloca i32, align 4\l  %a3.addr = alloca double, align 8\l  store i32 %a1, i32* %a1.addr, align 4\l  store i32 %a2, i32* %a2.addr, align 4\l  store double %a3, double* %a3.addr, align 8\l  %0 = load i32* %a1.addr, align 4\l  %1 = load i32* %a2.addr, align 4\l  %add = add nsw i32 %0, %1\l  %conv = sitofp i32 %add to double\l  %2 = load double* %a3.addr, align 8\l  %add1 = fadd double %conv, %2\l  %conv2 = fptosi double %add1 to i32\l  ret i32 %conv2\l}"];
+}

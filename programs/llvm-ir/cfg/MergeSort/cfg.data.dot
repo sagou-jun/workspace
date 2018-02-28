@@ -1,0 +1,5 @@
+digraph "CFG for 'data' function" {
+	label="CFG for 'data' function";
+
+	Node0x600066240 [shape=record,label="{entry:\l  %x.addr = alloca double, align 8\l  store double %x, double* %x.addr, align 8\l  %0 = load double* %x.addr, align 8\l  %1 = load double* %x.addr, align 8\l  %mul = fmul double %0, %1\l  %2 = load double* %x.addr, align 8\l  %conv = fptosi double %2 to i32\l  %rem = srem i32 %conv, 13\l  %conv1 = sitofp i32 %rem to double\l  %mul2 = fmul double %mul, %conv1\l  %3 = load double* %x.addr, align 8\l  %4 = load double* %x.addr, align 8\l  %mul3 = fmul double %3, %4\l  %add = fadd double %mul3, 1.000000e+03\l  %div = fdiv double %mul2, %add\l  %mul4 = fmul double %div, 1.000000e+02\l  %5 = load double* %x.addr, align 8\l  %add5 = fadd double %mul4, %5\l  %conv6 = fptosi double %add5 to i32\l  ret i32 %conv6\l}"];
+}

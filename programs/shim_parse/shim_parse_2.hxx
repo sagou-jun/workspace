@@ -29,6 +29,8 @@ using std::auto_ptr;
     float get_funcl(const char* funcname,MasterComponent MCom,int type);
     bool go_ComSet(ComponentSet &ComSet,const char *Comname);
     bool find_funcl(const char* funcname,MasterComponent MCom);
+    float get_pitch(const char* funcname,int type,char* ComList,...);
+    float get_function_pitch(const char* funcname,MasterComponent MCom,int type);
   };
   
 

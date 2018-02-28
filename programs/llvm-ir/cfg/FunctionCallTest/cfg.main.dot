@@ -1,0 +1,5 @@
+digraph "CFG for 'main' function" {
+	label="CFG for 'main' function";
+
+	Node0x6000671d0 [shape=record,label="{entry:\l  %retval = alloca i32, align 4\l  %fn1_result = alloca i32, align 4\l  %fn2_result = alloca double, align 8\l  store i32 0, i32* %retval\l  %call = call i32 @test(i32 1, i32 3, double 4.660000e+00)\l  %call1 = call i32 @fn1(i32 25, i32 4)\l  store i32 %call1, i32* %fn1_result, align 4\l  %call2 = call double @fn2(double 2.000000e+00, double 4.000000e+00)\l  store double %call2, double* %fn2_result, align 8\l  store i32 5, i32* @count, align 4\l  call void @fn3()\l  ret i32 0\l}"];
+}

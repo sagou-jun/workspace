@@ -1,17 +1,26 @@
+#include <stdio.h>
 #define dim 100
 
 int data(double x);
 void MergeSort(int x[], int left, int right);
 
 int main(){
-  int target[dim];
+  int target[dim],target2[dim];
   int i;
   
   for(i = 0;i < dim;i++)
-    target[i] = data(i);
+    {
+      target[i] = data(i);
+      target2[i] = target[i];
+    }
   
   MergeSort(target,0,dim-1);
 
+  for(i = 0;i < dim;i++)
+    {
+      printf("%d\t%d\n",target2[i],target[i]);
+    }
+  
   return 0;
 }
 

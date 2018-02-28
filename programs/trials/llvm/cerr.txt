@@ -1,0 +1,187 @@
+main
+		Function=_ResetVector
+		Function=_ResetVector
+		Function=_ResetVector
+		Function=SYSERR
+		Function=SYSERR
+		Function=HVTRAP
+		Function=HVTRAP
+		Function=FETRAP
+		Function=FETRAP
+		Function=TRAP0
+		Function=TRAP0
+		Function=TRAP1
+		Function=TRAP1
+		Function=RIE
+		Function=RIE
+		Function=FPPFPI
+		Function=FPPFPI
+		Function=UCPOP
+		Function=UCPOP
+		Function=MIP
+		Function=MIP
+		Function=PIE
+		Function=PIE
+		Function=DEBUG
+		Function=DEBUG
+		Function=MAE
+		Function=MAE
+		Function=RFU
+		Function=RFU
+		Function=FENMI
+		Function=FENMI
+		Function=FEINT
+		Function=FEINT
+		Function=EIINTn0
+		Function=EIINTn0
+		Function=EIINTn1
+		Function=EIINTn1
+		Function=EIINTn2
+		Function=EIINTn2
+		Function=EIINTn3
+		Function=EIINTn3
+		Function=EIINTn4
+		Function=EIINTn4
+		Function=EIINTn5
+		Function=EIINTn5
+		Function=EIINTn6
+		Function=EIINTn6
+		Function=EIINTn7
+		Function=EIINTn7
+		Function=EIINTn8
+		Function=EIINTn8
+		Function=EIINTn9
+		Function=EIINTn9
+		Function=EIINTn10
+		Function=EIINTn10
+		Function=EIINTn11
+		Function=EIINTn11
+		Function=EIINTn12
+		Function=EIINTn12
+		Function=EIINTn13
+		Function=EIINTn13
+		Function=EIINTn14
+		Function=EIINTn14
+		Function=EIINTn15
+		Function=EIINTn15
+		Function=_Bootup
+		Function=PE1
+		Function=GoHalt
+		Function=_EnableCopro
+		Function=_Halt
+		Function=_start
+		Function=_main
+		Function=_exit
+_main
+	NoInformation	207:752:add	-8, sp
+	NoInformation	208:754:st.w	lp, 4[sp]
+	NoInformation	209:758:st.w	r29, 0[sp]
+	NoInformation	210:762:addi	-84, sp, sp
+	NoInformation	211:766:mov	sp, r29
+	NoInformation	212:768:mov	0x440, r10
+	NoInformation	213:772:mov	0x440, r10
+	NoInformation	214:774:mov	r29, r12
+	NoInformation	215:776:mov	r10, r11
+	NoInformation	216:778:movea	80, r0, r10
+	NoInformation	217:782:mov	r12, r6
+	NoInformation	218:784:mov	r11, r7
+	NoInformation	219:786:mov	r10, r8
+	NoInformation	220:788:mov	0x416, r10
+	NoInformation	221:792:mov	0x416, r10
+	NoInformation	222:794:jarl	[r10], lp
+	NoInformation	223:798:st.w	r0, 80[r29]
+	NoInformation	224:802:br	380 <_main+0x90>
+	NoInformation	225:804:ld.w	80[r29], r10
+	NoInformation	226:808:shl	3, r10
+	NoInformation	227:810:movea	84, r0, r11
+	NoInformation	228:814:add	r29, r11
+	NoInformation	229:816:add	r11, r10
+	NoInformation	230:818:addi	-84, r10, r10
+	NoInformation	231:822:ld.w	0[r10], r12
+	NoInformation	232:826:ld.w	4[r10], r13
+	NoInformation	233:830:ld.w	80[r29], r10
+	NoInformation	234:834:shl	3, r10
+	NoInformation	235:836:movea	84, r0, r11
+	NoInformation	236:840:add	r29, r11
+	NoInformation	237:842:add	r11, r10
+	NoInformation	238:844:addi	-84, r10, r14
+	NoInformation	239:848:ld.w	0[r14], r10
+	NoInformation	240:852:ld.w	4[r14], r11
+	NoInformation	241:856:addf.d	r12, r10, r10
+	NoInformation	242:860:ld.w	80[r29], r12
+	NoInformation	243:864:shl	3, r12
+	NoInformation	244:866:movea	84, r0, r13
+	NoInformation	245:870:add	r29, r13
+	NoInformation	246:872:add	r13, r12
+	NoInformation	247:874:addi	-84, r12, r12
+	NoInformation	248:878:st.w	r10, 0[r12]
+	NoInformation	249:882:st.w	r11, 4[r12]
+	NoInformation	250:886:ld.w	80[r29], r10
+	NoInformation	251:890:add	1, r10
+	NoInformation	252:892:st.w	r10, 80[r29]
+	NoInformation	253:896:ld.w	80[r29], r10
+	NoInformation	254:900:cmp	9, r10
+	NoInformation	255:902:ble	324 <_main+0x34>
+	NoInformation	256:904:mov	0, r10
+	NoInformation	257:906:mov	r29, sp
+	NoInformation	258:908:ld.w	88[sp], lp
+	NoInformation	259:912:ld.w	84[sp], r29
+	NoInformation	260:916:addi	92, sp, sp
+	NoInformation	261:920:jmp	[lp]
+_main
+_main
+	entry	207:752:add	-8, sp
+	entry	208:754:st.w	lp, 4[sp]
+	entry	209:758:st.w	r29, 0[sp]
+	entry	210:762:addi	-84, sp, sp
+	entry	211:766:mov	sp, r29
+	entry	212:768:mov	0x440, r10
+	entry	213:772:mov	0x440, r10
+	entry	214:774:mov	r29, r12
+	entry	215:776:mov	r10, r11
+	entry	216:778:movea	80, r0, r10
+	entry	217:782:mov	r12, r6
+	entry	218:784:mov	r11, r7
+	entry	219:786:mov	r10, r8
+	entry	220:788:mov	0x416, r10
+	entry	221:792:mov	0x416, r10
+	entry	222:794:jarl	[r10], lp
+	entry	223:798:st.w	r0, 80[r29]
+	entry	224:802:br	380 <_main+0x90>
+	entry	225:804:ld.w	80[r29], r10
+	entry	226:808:shl	3, r10
+	entry	227:810:movea	84, r0, r11
+	entry	228:814:add	r29, r11
+	entry	229:816:add	r11, r10
+	entry	230:818:addi	-84, r10, r10
+	entry	231:822:ld.w	0[r10], r12
+	entry	232:826:ld.w	4[r10], r13
+	entry	233:830:ld.w	80[r29], r10
+	entry	234:834:shl	3, r10
+	entry	235:836:movea	84, r0, r11
+	entry	236:840:add	r29, r11
+	entry	237:842:add	r11, r10
+	entry	238:844:addi	-84, r10, r14
+	entry	239:848:ld.w	0[r14], r10
+	entry	240:852:ld.w	4[r14], r11
+	entry	241:856:addf.d	r12, r10, r10
+	entry	242:860:ld.w	80[r29], r12
+	entry	243:864:shl	3, r12
+	entry	244:866:movea	84, r0, r13
+	entry	245:870:add	r29, r13
+	entry	246:872:add	r13, r12
+	entry	247:874:addi	-84, r12, r12
+	entry	248:878:st.w	r10, 0[r12]
+	entry	249:882:st.w	r11, 4[r12]
+	entry	250:886:ld.w	80[r29], r10
+	entry	251:890:add	1, r10
+	entry	252:892:st.w	r10, 80[r29]
+	entry	253:896:ld.w	80[r29], r10
+	entry	254:900:cmp	9, r10
+	entry	255:902:ble	324 <_main+0x34>
+	entry	256:904:mov	0, r10
+	entry	257:906:mov	r29, sp
+	entry	258:908:ld.w	88[sp], lp
+	entry	259:912:ld.w	84[sp], r29
+	entry	260:916:addi	92, sp, sp
+	entry	261:920:jmp	[lp]

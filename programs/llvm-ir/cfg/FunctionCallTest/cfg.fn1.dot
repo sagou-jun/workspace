@@ -1,0 +1,12 @@
+digraph "CFG for 'fn1' function" {
+	label="CFG for 'fn1' function";
+
+	Node0x600063a60 [shape=record,label="{entry:\l  %retval = alloca i32, align 4\l  %a1.addr = alloca i32, align 4\l  %a2.addr = alloca i32, align 4\l  store i32 %a1, i32* %a1.addr, align 4\l  store i32 %a2, i32* %a2.addr, align 4\l  %0 = load i32* %a2.addr, align 4\l  %cmp = icmp ne i32 %0, 0\l  br i1 %cmp, label %if.then, label %if.else\l|{<s0>T|<s1>F}}"];
+	Node0x600063a60:s0 -> Node0x600063ed0;
+	Node0x600063a60:s1 -> Node0x600063ff0;
+	Node0x600063ed0 [shape=record,label="{if.then:                                          \l  %1 = load i32* %a1.addr, align 4\l  %2 = load i32* %a1.addr, align 4\l  %3 = load i32* %a2.addr, align 4\l  %sub = sub nsw i32 %3, 1\l  %call = call i32 @fn1(i32 %2, i32 %sub)\l  %add = add nsw i32 %1, %call\l  store i32 %add, i32* %retval\l  br label %return\l}"];
+	Node0x600063ed0 -> Node0x6000645a0;
+	Node0x600063ff0 [shape=record,label="{if.else:                                          \l  store i32 1, i32* %retval\l  br label %return\l}"];
+	Node0x600063ff0 -> Node0x6000645a0;
+	Node0x6000645a0 [shape=record,label="{return:                                           \l  %4 = load i32* %retval\l  ret i32 %4\l}"];
+}

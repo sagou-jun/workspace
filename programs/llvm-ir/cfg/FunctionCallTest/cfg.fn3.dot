@@ -1,0 +1,10 @@
+digraph "CFG for 'fn3' function" {
+	label="CFG for 'fn3' function";
+
+	Node0x6000668b0 [shape=record,label="{entry:\l  %0 = load i32* @count, align 4\l  %cmp = icmp ne i32 %0, 0\l  br i1 %cmp, label %if.then, label %if.end\l|{<s0>T|<s1>F}}"];
+	Node0x6000668b0:s0 -> Node0x600066b50;
+	Node0x6000668b0:s1 -> Node0x600066c50;
+	Node0x600066b50 [shape=record,label="{if.then:                                          \l  %1 = load i32* @count, align 4\l  %dec = add nsw i32 %1, -1\l  store i32 %dec, i32* @count, align 4\l  call void @fn3()\l  br label %if.end\l}"];
+	Node0x600066b50 -> Node0x600066c50;
+	Node0x600066c50 [shape=record,label="{if.end:                                           \l  ret void\l}"];
+}

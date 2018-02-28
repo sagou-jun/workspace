@@ -23,8 +23,7 @@ bool shim_parse::go_ComSet(ComponentSet &ComSet,const char* Comname)
 }
 
 float shim_parse::get_latency(const char *funcname ,int type,char *ComList,...)
-{
-  
+{ 
   auto_ptr<SystemConfiguration> SysCon;
   SysCon = SystemConfiguration_(filename_shim,xml_schema::flags::dont_validate);//全体を取ってくる
   ComponentSet ComSet (SysCon->ComponentSet());
@@ -81,6 +80,66 @@ float shim_parse::get_latency(const char *funcname ,int type,char *ComList,...)
       return latency;
     }
 }
+
+float shim_parse::get_pitch(const char *funcname ,int type,char *ComList,...)
+{ 
+  auto_ptr<SystemConfiguration> SysCon;
+  SysCon = SystemConfiguration_(filename_shim,xml_schema::flags::dont_validate);//全体を取ってくる
+  ComponentSet ComSet (SysCon->ComponentSet());
+  char* Comname = ComList;
+  
+  if(*Comname != '\0')
+    {
+      va_list args;
+      
+      va_start(args, ComList);
+      while(*Comname != '|')
+	{
+	  go_ComSet(ComSet,Comname);
+	  Comname = va_arg(args, char*);
+	}
+      Comname = va_arg(args,char*);
+      
+      AccessTypeSet ATS;                        //引数に与えるためにMComの入れ物を作る
+      MasterComponent MCom (ATS,"","0","PU","");
+      const char *MCom_name = Comname;
+      
+      if(go_Mcomponent(ComSet,MCom_name,MCom,funcname)==false)
+	{
+	  cout << "not found MasterComponent:"<< MCom_name << endl;
+	  return -1;
+	}
+      float pitch = get_function_pitch(funcname,MCom,type);
+      if(pitch < 0)
+	{
+	  cout << "not found this function in " << MCom_name << endl;
+	  return -1;
+	}
+      va_end(args);
+      return pitch;   
+    }
+  else
+    {
+      AccessTypeSet ATS;                        //引数に与えるためにMComの入れ物を作る
+      MasterComponent MCom (ATS,"","0","PU","");
+     
+      const char* MCom_name = "\0";
+      if(go_Mcomponent(ComSet,MCom_name,MCom,funcname)==false)
+	{
+	  cout << "not found MasterComponent" << endl;
+	  return -1;
+	}
+
+      float pitch = get_function_pitch(funcname,MCom,type);
+      if(pitch < 0)
+	{
+	  cout << "not found this function " << endl;
+	  return -1;
+	}
+      return pitch;
+    }
+}
+
 float shim_parse::get_funcl(const char* funcname,MasterComponent MCom,int type)
 {
   if(!MCom.CommonInstructionSet())
@@ -136,6 +195,39 @@ bool shim_parse::find_funcl(const char* funcname,MasterComponent MCom)
   return false;
 }
 
+float shim_parse::get_function_pitch(const char* funcname,MasterComponent MCom,int type)
+{
+  if(!MCom.CommonInstructionSet())
+    return -1;
+  CommonInstructionSet CISet (*MCom.CommonInstructionSet());
+  CommonInstructionSet::Instruction_sequence Inst_seq;
+  Inst_seq = CISet.Instruction();
+  CommonInstructionSet::Instruction_sequence::iterator itr;
+  itr = Inst_seq.begin();
+  Instruction Inst (*itr);
+  for(; itr != Inst_seq.end(); itr++)
+    {
+      Inst = (*itr);
+      if(Inst.name() == funcname)
+	{
+	  break;
+	}
+    }
+  Performance Perf (Inst.Performance());
+  Pitch pitch (Perf.Pitch());
+  switch(type)
+    {
+    case BEST:
+      return *pitch.best();
+    case WORST:
+      return *pitch.worst();
+    case TYPICAL:
+      return pitch.typical();
+    default:
+      return -1;
+    }
+  
+}
 
 /*ComponentSetにMCom＿nameがあればtrueを返し、なければfalseを返す*/
 bool shim_parse::find_Mcomponent(ComponentSet ComSet,const char *MCom_name,MasterComponent &MCom)

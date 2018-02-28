@@ -1,0 +1,23 @@
+Cpp = g++
+flags = `/usr/local/llvm/llvm-3.6.2-build/Release+Asserts/bin/llvm-config --cxxflags`
+LDflags = `/usr/local/llvm/llvm-3.6.2-build/Release+Asserts/bin/llvm-config --ldflags --libs`
+MATLABWORK = /usr/local/matlab/
+
+DLLVMSim4.exe:DLLVMSim4.o DIRSim4.o DIRSimRegs.o DIRSimMems.o DRun.o
+	$(Cpp) LLVMSim4.o IRSimRegs.o IRSimMems.o IRSim4.o Run.o $(LDflags) -g -o DLLVMSim4.exe
+	rm DLLVMSim4.o DIRSim4.o DIRSimRegs.o DIRSimMems.o DRun.o
+
+DLLVMSim4.o:LLVMSim4.cpp IRSim4.hpp
+	$(Cpp) -c $(flags) LLVMSim4.cpp -g -o DLLVMSim4.o
+
+DRun.o:Run.cpp IRSim4.hpp
+	$(Cpp) -c $(flags) Run.cpp -g -o DRun.o
+
+DIRSim4.o:IRSim4.cpp IRSim4.hpp IRSimRegs.hpp IRSimMems.hpp
+	$(Cpp) -c $(flags) IRSim4.cpp -g -o DIRSim4.o
+
+DIRSimRegs.o:IRSimRegs.hpp IRSimRegs.cpp
+	$(Cpp) -c IRSimRegs.cpp -g -o DIRSimRegs.o
+
+DIRSimMems.o:IRSimMems.hpp IRSimMems.cpp
+	$(Cpp) -c IRSimMems.cpp -g -o DIRSimMems.o

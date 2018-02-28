@@ -1,5 +1,3 @@
-#include<stdio.h>
-
 int count;
 
 int test(int a1,int a2,double a3){
@@ -38,6 +36,6 @@ int main(){
   fn2_result = fn2(2.0,4.0);
   count = 5;
   fn3();
-  printf("fn1 = %d,fn2 = %lf\n",fn1_result,fn2_result);
+	//  printf("fn1 = %d,fn2 = %lf\n",fn1_result,fn2_result);
   return 0;
 }
