@@ -1,9 +1,0 @@
-#ifndef RESULTSTATE_H
-#define RESULTSTATE_H
-
-#define NORMAL_RUNINST		0
-#define BRANCH_RUNINST		1
-#define FUNCTION_RUNINST	2
-#define ERROR_RUNINST		-1
-
-#endif
